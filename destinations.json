@@ -1,0 +1,44 @@
+[
+  {
+    "category": "beach",
+    "name": "Whitehaven Beach",
+    "location": "Australia",
+    "description": "Bright white sand and tidal turquoise channels on Whitsunday Island.",
+    "image": "images/whitehaven.svg"
+  },
+  {
+    "category": "beach",
+    "name": "Anse Source d’Argent",
+    "location": "Seychelles",
+    "description": "A sheltered La Digue beach with pale sand and sculpted granite boulders.",
+    "image": "images/anse.svg"
+  },
+  {
+    "category": "temple",
+    "name": "Angkor Wat",
+    "location": "Cambodia",
+    "description": "Explore the courtyards and lotus-shaped towers of this Khmer temple complex.",
+    "image": "images/angkor.svg"
+  },
+  {
+    "category": "temple",
+    "name": "Kiyomizu-dera",
+    "location": "Japan",
+    "description": "Visit the hillside temple in Kyoto for a view across the city.",
+    "image": "images/kiyomizu.svg"
+  },
+  {
+    "category": "country",
+    "name": "Japan",
+    "location": "East Asia",
+    "description": "Combine city neighborhoods and historic temples with mountain scenery.",
+    "image": "images/japan.svg"
+  },
+  {
+    "category": "country",
+    "name": "New Zealand",
+    "location": "Oceania",
+    "description": "Explore alpine lakes, coastal trails, and the landscapes of both main islands.",
+    "image": "images/nz.svg"
+  }
+]

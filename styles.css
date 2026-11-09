@@ -1,0 +1,60 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+  color: #142e32;
+  background: #f7f4ea;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  padding: 1rem clamp(1rem, 5vw, 5rem);
+  background: #102d31;
+  color: #fff;
+}
+.brand { font-weight: 800; letter-spacing: .12em; }
+.site-header a { color: inherit; text-decoration: none; }
+.site-header a:hover, [aria-current="page"] { text-decoration: underline !important; text-underline-offset: .4em; }
+nav, #search-form { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; }
+input, textarea, button { font: inherit; border-radius: .45rem; padding: .65rem .8rem; }
+input, textarea { border: 1px solid #819697; background: #fff; color: #142e32; }
+button { border: 1px solid transparent; background: #bce3c5; color: #102d31; font-weight: 700; cursor: pointer; }
+button:hover { background: #d2efdb; }
+#clear-search { background: transparent; border-color: #a9c9c2; color: #fff; }
+:focus-visible { outline: 3px solid #d48031; outline-offset: 3px; }
+.home {
+  min-height: calc(100vh - 5rem);
+  padding: clamp(2rem, 7vw, 7rem) clamp(1rem, 6vw, 6rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 2rem;
+  background: linear-gradient(125deg, #f8f1de, #e2eee8);
+}
+h1, h2, h3, p { margin-top: 0; }
+h1 { font: 700 clamp(2.75rem, 7vw, 6.5rem)/.98 Georgia, serif; letter-spacing: -.04em; margin-bottom: 1.4rem; }
+.intro > p, .inner > p { max-width: 38rem; line-height: 1.65; }
+.eyebrow { font-size: .78rem; font-weight: 800; letter-spacing: .18em; }
+.hint { color: #415a5b; }
+#search-status:not(:empty) { font-weight: 750; margin: 0 0 .8rem; }
+#results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; }
+article { border-radius: .8rem; overflow: hidden; background: #fff; border: 1px solid #d2dfd8; }
+article img { width: 100%; height: auto; display: block; }
+article h2, article h3 { margin: 1rem 1rem .5rem; font-size: 1.05rem; }
+article p { margin: 0 1rem 1rem; line-height: 1.5; }
+.inner { max-width: 72rem; margin: auto; padding: 4rem 1.25rem; }
+.team { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.contact-form { display: grid; gap: .6rem; max-width: 32rem; margin-bottom: 1rem; }
+.contact-form button { justify-self: start; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+@media (max-width: 760px) {
+  .home, .team { grid-template-columns: 1fr; }
+}
+@media (max-width: 410px) {
+  #results { grid-template-columns: 1fr; }
+  #destination { width: 100%; }
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Wayfarer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+<a class="brand" href="index.html">✦ WAYFARER</a>
+<nav aria-label="Main navigation">
+<a href="index.html" aria-current="page">Home</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact Us</a>
+<form id="search-form" role="search">
+<label class="visually-hidden" for="destination">Search destinations</label>
+<input id="destination" type="search" placeholder="Beach, temple, country…" required>
+<button type="submit">Search</button>
+<button id="clear-search" type="button">Clear</button>
+</form>
+</nav>
+</header>
+<main class="home">
+<section class="intro">
+<p class="eyebrow">THE TRAVEL RECOMMENDATION GUIDE</p>
+<h1>Find your next<br>favorite place.</h1>
+<p>From quiet beaches to historic temples, Wayfarer helps you find places worth planning a trip around.</p>
+<p class="hint">Try searching for <strong>beach</strong>, <strong>temple</strong>, or <strong>country</strong>.</p>
+</section>
+<section class="recommendations" aria-label="Recommendations">
+<p id="search-status" role="status"></p>
+<div id="results"></div>
+</section>
+</main>
+<script src="search.js" defer></script>
+</body>
+</html>

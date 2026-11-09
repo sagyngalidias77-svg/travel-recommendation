@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | Wayfarer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+<a class="brand" href="index.html">✦ WAYFARER</a>
+<nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="contact.html" aria-current="page">Contact Us</a>
+
+</nav>
+</header>
+<main class="inner">
+<p class="eyebrow">GET IN TOUCH</p>
+<h1>Contact Us</h1>
+<p>Send us a destination suggestion or report a correction.</p>
+<p>Email <a id="contact-email" href="mailto:sagyngalidias77@gmail.com">sagyngalidias77@gmail.com</a></p>
+<form id="contact-form" class="contact-form">
+<label for="name">Name</label><input id="name" name="name" autocomplete="name" required>
+<label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required>
+<label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea>
+<button type="submit">Open email draft</button>
+</form>
+<p class="hint">Your email app opens with the message ready for you to review and send.</p>
+</main>
+<script src="contact.js" defer></script>
+</body>
+</html>
